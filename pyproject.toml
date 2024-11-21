@@ -1,22 +1,26 @@
 [build-system]
-# This defines the build system and the backend used to build the package.
-# We use setuptools as the build system.
 requires = [
-    "setuptools>=42",  # Setuptools is the most common tool for packaging and distribution
-    "wheel"  # Wheel is the preferred packaging format
+    "setuptools>=42",
+    "wheel"
 ]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-# This section allows you to specify package details
-packages = ["Audio_files_organizer_for_iphone"]
-
-[tool.setuptools.package_data]
-
-
-[tool.setuptools.entry_points]
-# This section defines entry points for your package (e.g., CLI commands)
-# This allows the script to be run directly from the command line using `audio-metadata-organizer`
-console_scripts = [
-    "audio-files-organizer-iphone=Audio_files_organizer_for_iphone.Audio_organizer:processit"
+[project]
+name = "audio_files_organizer_iphone"
+version = "0.0.1"
+description = "A tool for organizing audio files for iPhone compatibility"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "David Sandeep", email = "davidsandeep1996@gmail.com" }
 ]
+keywords = ["audio", "organizer", "metadata", "iphone"]
+
+# Declare dynamic fields
+dynamic = ["requires-python", "classifiers"]
+
+[project.optional-dependencies]
+gui = ["tkinter"]
+
+[project.scripts]
+audio_files_organizer_iphone = "Audio_files_organizer_for_iphone.Audio_organizer:processit"

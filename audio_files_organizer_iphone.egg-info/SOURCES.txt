@@ -1,4 +1,6 @@
+LICENSE
 README.md
+pyproject.toml
 setup.py
 Audio_files_organizer_for_iphone/Audio_organizer.py
 Audio_files_organizer_for_iphone/__init__.py

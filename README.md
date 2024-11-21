@@ -3,9 +3,7 @@ Organize audio files and update their metadata to maintain the original folder s
 
 
 
-# Audio File Metadata Organizer Script
-
-## Documentation for Audio File Metadata Organizer Script
+# Audio File Metadata Organizer 
 
 ### Introduction
 
@@ -51,7 +49,7 @@ Use this script when:
     - If updating metadata fails, the script tries to re-encode the audio file using FFmpeg, ensuring compatibility.
     
 5. **Move Processed Files**:
-    - Successfully processed files are moved to a folder named `audio songs`, preserving the folder structure.
+    - Successfully processed files are moved to a folder named `audio songs`, preserving the folder structure, if user prompt's yes then all files will move to target location.
     
 6. **Generate Logs**:
     - The script generates logs for:
@@ -140,13 +138,34 @@ You want to:
 - Update all metadata so that **Album1's** tracks have the same album name and artist: **Album1**.
 - Consolidate everything into a single directory named `audio songs`, while retaining the folder structure.
 
-#### Steps
-1. Run the script.
-2. Select `Music/` as the base directory when prompted.
-3. Choose a target directory where the `audio songs` folder will be created.
-4. Once processing is complete:
-    - Drag the `audio songs` folder into iTunes.
-    - Sync your iPhone to reflect the updated folder structure.
+
+## Steps to Use the Package
+
+### 1. Install the Package
+To install the package, run the following command:
+
+```bash
+pip install audio-files-organizer-iphone
+```
+
+### 2. Run the Script by Importing the Package
+After installation, run the script by importing the package and calling the `processit()` function:
+
+```python
+from  Audio_files_organizer_for_iphone import Audio_organizer
+Audio_organizer.processit()
+```
+
+### 3. Select the Base Directory
+When prompted, select the `Music/` directory as the base directory.
+
+### 4. Choose the Target Directory
+Next, choose a target directory where the `audio songs` folder will be created.
+
+### 5. Once Processing is Complete
+After processing is finished:
+- Drag the `audio songs` folder into **iTunes**.
+- Sync your iPhone to reflect the updated folder structure.
 
 ---
 

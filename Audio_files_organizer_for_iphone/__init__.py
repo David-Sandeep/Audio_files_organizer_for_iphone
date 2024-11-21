@@ -11,8 +11,8 @@ Author: David Sandeep
 License: MIT
 """
 
-from Audio_organizer import processit
+from .Audio_organizer import processit
 
-__version__ = "0.1.0"
+__version__ = "0.0.1"
 __author__ = "David Sandeep"
 
