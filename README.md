@@ -171,6 +171,3 @@ I am David Sandeep, and I created this script to address my own challenges with 
 
 If you have a similar need, this script can save you time and ensure your music library stays organized when synced to Apple devices.
 
----
-
-This `README.md` provides a comprehensive yet concise overview of the script, its features, usage instructions, and developer details. It serves as a guide for both users and contributors to understand the script’s purpose and functionality.
