@@ -13,6 +13,6 @@ License: MIT
 
 from .Audio_organizer import processit
 
-__version__ = "0.0.1"
+__version__ = "0.0.3"
 __author__ = "David Sandeep"
 

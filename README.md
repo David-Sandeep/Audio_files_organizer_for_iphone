@@ -142,7 +142,11 @@ You want to:
 ## Steps to Use the Package
 
 ### 1. Install the Package
-To install the package, run the following command:
+Install the following packages, run the following commands:
+
+```bash
+pip install mutagen
+```
 
 ```bash
 pip install audio-files-organizer-iphone

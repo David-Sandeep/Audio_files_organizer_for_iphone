@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: audio_files_organizer_iphone
-Version: 0.0.1
+Version: 0.0.3
 Summary: A tool for organizing audio files for iPhone compatibility
 Home-page: https://github.com/David-Sandeep/audio-files-organizer-iphone
 Author: David Sandeep
@@ -183,7 +183,11 @@ You want to:
 ## Steps to Use the Package
 
 ### 1. Install the Package
-To install the package, run the following command:
+Install the following packages, run the following commands:
+
+```bash
+pip install mutagen
+```
 
 ```bash
 pip install audio-files-organizer-iphone

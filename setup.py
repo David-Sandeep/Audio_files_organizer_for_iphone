@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="audio_files_organizer_iphone",
-    version="0.0.1",
+    version="0.0.3",
     description="A tool for organizing audio files for iPhone compatibility",
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type="text/markdown",  # Set the type of the README file
@@ -17,9 +17,9 @@ setup(
         "Intended Audience :: End Users/Desktop",
         "Topic :: Multimedia :: Sound/Audio :: Conversion",
     ],
-    extras_require={
-        "gui": ["tkinter"]
-    },
+    install_requires=[
+        "mutagen"  
+    ],
     python_requires='>=3.7',  # Minimum Python version
     entry_points={
         "console_scripts": [

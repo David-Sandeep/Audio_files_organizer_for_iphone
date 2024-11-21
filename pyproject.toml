@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "audio_files_organizer_iphone"
-version = "0.0.1"
+version = "0.0.3"
 description = "A tool for organizing audio files for iPhone compatibility"
 readme = "README.md"
 license = { file = "LICENSE" }
